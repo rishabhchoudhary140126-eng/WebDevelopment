@@ -1,0 +1,26 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+
+}
+h3 {
+    color:chocolate
+}
+h1, h2{ 
+    color: #b92b27
+}
+#firstpost {
+    color: rgba(177, 72, 7, 0.819);
+}
+#login {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+#signup {
+    background-color: #b92b27;
+    color: #ffffff;;
+}
+
+.upvote {
+    background-color: blue;
+    color: #ffffff;
+}
