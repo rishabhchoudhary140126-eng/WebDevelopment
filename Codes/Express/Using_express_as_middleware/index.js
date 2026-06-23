@@ -7,6 +7,7 @@ function checkAge(age){
     return false;
 }
 function checkAgeMiddleware(req, res, next){
+    const age = parseInt(req.query.age);
     if(age>=14) {
         next();
     }
@@ -15,7 +16,7 @@ function checkAgeMiddleware(req, res, next){
     }
 }
 
-app.get("/ride1", function(req, res){
+app.get("/ride1",checkAgeMiddleware, function(req, res){
     
 
     if(checkAge(req.query.age)){
@@ -26,3 +27,9 @@ app.get("/ride1", function(req, res){
 });
 
 app.listen(3000);
+
+// check obsidian notes for middleware use.
+// check obsidian notes for middleware use.
+// check obsidian notes for middleware use.
+// check obsidian notes for middleware use.
+// check obsidian notes for middleware use.
